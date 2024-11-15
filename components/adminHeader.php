@@ -3,6 +3,11 @@
     <a href="dashboard.php">
       <h2 class="logo">velvet.vogue</h2>
     </a>
+
+    <nav class="navbar">
+      <a href="createProduct.php">create</a>
+    </nav>
+
     <div class="icons">
       <i class="bx bxs-user" id="user-btn"></i>
       <?php
