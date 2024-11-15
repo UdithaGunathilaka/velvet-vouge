@@ -56,13 +56,13 @@
 
   <div class="main">
     <h1 class="title">update product</h1>
-    <section class="manage-product-container">
+    <section class="manage-product-container" style="border: 1px solid rgba(0 0 0 / 10%); padding: 1rem; border-radius: 20px;">
       <form method="post" action="">
-        <div>
+        <div class="col-1">
           <img src="img/products/<?= $product["image"]; ?>.png">
         </div>
 
-        <div>
+        <div class="col-2">
           <label for="name">product name</label>
           <input type="text" name="name" value="<?= $product["name"]; ?>" required>
 

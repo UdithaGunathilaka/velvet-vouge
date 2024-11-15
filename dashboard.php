@@ -48,6 +48,7 @@
         <div class="row">
           <h3 class="name"><?=$fetchProduct["name"]; ?></h3>
           <p class="price">price: $<?=$fetchProduct["price"]; ?></p>
+          <i class="bi bi-arrow-right arrow"></i>
         </div>
       </a>
       <?php

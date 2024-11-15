@@ -53,16 +53,16 @@
   <div class="main">
     <h1 class="title">manage product</h1>
     <section class="product">
-      <div>
+      <div class="col-1">
         <img src="img/products/<?= $product["image"]; ?>.png" class="product-img">
       </div>
 
-      <div>
+      <div class="col-2">
         <p><?= $product["name"]; ?></parent>
-        <p>price: $<?= $product["price"]; ?></p>
-        <p>description: <?= $product["productDetail"]; ?></p>
+        <p><span>price: $</span><?= $product["price"]; ?></p>
+        <p><span>description:</span> <?= $product["productDetail"]; ?></p>
 
-        <form method="post" action="">
+        <form method="post" action="" class="row-1">
           <button type="button" onclick="location.href='updateProduct.php?pid=<?= $productID; ?>'" class="btn update-btn">Update</button>
           <button type="submit" name="delete" onclick="return confirm('delete this item')" class="btn dlt-btn">Delete</button>
         </form>

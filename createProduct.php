@@ -55,39 +55,39 @@
 
   <div class="main">
     <h1 class="title">create product</h1>
-    <section class="manage-product-container">
+    <section class="manage-product-container" style="border: 1px solid rgba(0 0 0 / 10%); padding: 1rem; border-radius: 20px;">
       <form method="post" action="">
-        <div>
+        <div class="row">
           <label for="id" style="text-transform: uppercase;">ID</label>
           <input type="number" name="id" required>
         </div>
 
-        <div>
+        <div class="row">
           <label for="name">name</label>
           <input type="text" name="name" required>
         </div>
 
-        <div>
+        <div class="row">
           <label for="rate">rate</label>
           <input type="number" name="rate" required>
         </div>
 
-        <div>
+        <div class="row">
           <label for="price">price</label>
           <input type="number" name="price" required>
         </div>
 
-        <div>
+        <div class="row">
           <label for="image">image</label>
           <input type="file" name="image" id="image" accept="image/*">
         </div>
 
-        <div>
+        <div class="row">
           <label for="description">description</label>
           <textarea name="description" required></textarea>
         </div>
  
-        <div>
+        <div class="row">
           <button type="submit" name="create" onclick="return confirm('create item')" class="btn create-btn">create</button>
         </div>
       </form>
